@@ -1,0 +1,1169 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: Visual Thought-1.4
+%%For: qbarnes
+%%Title: classic-kprobes.vthought
+%%CreationDate: Sun Apr 15, 2007 1:26:14 PM CDT
+%%BoundingBox: 0 0 498 358 
+%%Orientation: Landscape
+%%Pages: 0
+%%DocumentFonts: (atend)
+%%DocumentNeededFonts: (atend)
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+50 dict begin
+/ifdef {1 index where {pop pop pop}{def} ifelse} bind def
+/rrcurveto {4 {2 index sub 6 1 roll} repeat
+2 {6 1 roll} repeat} bind ifdef
+/arct {arcto pop pop pop pop} bind ifdef
+/rect {4 -2 roll moveto
+1 index 0 rlineto 0 exch rlineto neg 0 rlineto
+closepath} bind def
+/rectfill {gsave newpath rect fill grestore} bind ifdef
+/rectstroke {gsave newpath rect stroke grestore} bind ifdef
+/xshow {pop show} bind ifdef
+/xyshow {pop show} bind ifdef
+/yshow {pop show} bind ifdef
+/z /closepath load def
+/c /curveto load def
+/l /lineto load def
+/m /moveto load def
+/a /newpath load def
+/C /rcurveto load def
+/L /rlineto load def
+/M /rmoveto load def
+/CC /rrcurveto load def
+/rc {newpath {rect} repeat clip newpath} bind def
+/rf {{rectfill} repeat} bind def
+/rs {{rectstroke} repeat} bind def
+/rp {{rect} repeat} bind def
+/S /awidthshow load def
+/s /show load def
+/pc /clip load def
+/pC /eoclip load def
+/pf /fill load def
+/pF /eofill load def
+/ps /stroke load def
+/ibuf 1024 string def
+/iproc {3 -1 roll mul 7 add 8 idiv mul
+/bc 1 index 1024 idiv def /bp exch 1024 mod def
+{currentfile ibuf
+bc 0 gt {/bc bc 1 sub def}{0 bp getinterval} ifelse
+readhexstring pop}} bind def
+/i {3 index 3 index 3 index iproc image} bind def
+/im {3 index 3 index 1 iproc imagemask} bind def
+/ci {3 index 3 index 3 index 3 mul iproc false 3 colorimage} bind def
+/mtx matrix def
+/ii {currentpoint exch neg exch neg mtx translate i} bind def
+/imi {currentpoint exch neg exch neg mtx translate im} bind def
+/cii {currentpoint exch neg exch neg mtx translate ci} bind def
+/gr /grestore load def
+/gs /gsave load def
+/rm /rotate load def
+/sm /scale load def
+/tm /translate load def
+/sc /setrgbcolor load def
+/sw /setlinewidth load def
+/ssf {1 mul exch findfont exch scalefont setfont} bind def
+/msf {1 mul exch findfont exch makefont setfont} bind def
+%%EndProlog
+%%BeginSetup
+
+%%IncludeFont: Helvetica-Bold
+/Helvetica-Bold 12 ssf
+%%EndSetup
+save
+gs
+0 0 498 358 1 rc
+[1 0 0 1 -17 -264 ] concat
+1 1 1 sc
+17 264 498 358 1 rf
+0 0 0 sc
+a gs
+1 1 1 sc
+gr
+gs
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 256 538 m 0.6 0.6 0.6 sc
+148 538 l 148 520 l 256 520 l 256 538 l z pf
+a 256 538 m 0.6 0.6 0.6 sc
+148 538 l 148 520 l 256 520 l 256 538 l ps
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 252 542 m 1 1 1 sc
+144 542 l 144 524 l 252 524 l 252 542 l z pf
+a 252 542 m 0 0 0 sc
+144 542 l 144 524 l 252 524 l 252 542 l ps
+gr
+gs
+gs
+146 526 104 14 1 rc
+0 526 m 
+%%IncludeFont: Helvetica
+/Helvetica 12 ssf
+0 0 0 sc
+148 529 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(preempt_disable\(\)) s
+0 0 0 sc
+gr
+gr
+gs
+1 sw
+gr
+gs
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 256 520 m 0.6 0.6 0.6 sc
+148 520 l 148 502 l 256 502 l 256 520 l z pf
+a 256 520 m 0.6 0.6 0.6 sc
+148 520 l 148 502 l 256 502 l 256 520 l ps
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 252 524 m 1 1 1 sc
+144 524 l 144 506 l 252 506 l 252 524 l z pf
+a 252 524 m 0 0 0 sc
+144 524 l 144 506 l 252 506 l 252 524 l ps
+gr
+gs
+gs
+146 508 104 14 1 rc
+0 508 m /Helvetica 12 ssf
+0 0 0 sc
+158 511 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(lookup kprobe) s
+0 0 0 sc
+gr
+gr
+gs
+1 sw
+gr
+gs
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 81 504 m 1 1 1 sc
+18 504 l 18 486 l 81 486 l 81 504 l z pf
+a 81 504 m 0 0 0 sc
+18 504 l 18 486 l 81 486 l 81 504 l ps
+gr
+gs
+gs
+20 488 59 14 1 rc
+0 488 m /Helvetica 12 ssf
+0 0 0 sc
+21 491 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(kprobe bp) s
+0 0 0 sc
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+18 576 m 21 577.5 31.5 586.5 36 585 c 40.5 583.5 42 568.5 45 567 c 48 565.5 48 574.5 54 576 c 60 577.5 76.5 576 81 576 c ps
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+18 576 m 18 564 18 516 18 504 c ps
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+81 576 m 81 564 81 516 81 504 c ps
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+81 414 m 78 412.5 67.5 403.5 63 405 c 58.5 406.5 57 421.5 54 423 c 51 424.5 51 415.5 45 414 c 39 412.5 22.5 414 18 414 c ps
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+81 414 m 81 426 81 474 81 486 c ps
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+18 414 m 18 426 18 474 18 486 c ps
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+47 558 m 47 550.293 47 520.76 47 511.76 c ps
+gs
+47 504 tm
+-90 rm
+[] 0 setdash
+a 0 0 m -8 2 L 0 -2 L -0 -2 L 0 0 l z pf
+1 sw
+0 0 m -8 2 L 0 -2 L -0 -2 L 0 0 l z ps
+90 rm
+-47 -504 tm
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+47 486 m 47 478.293 47 448.76 47 439.76 c ps
+gs
+47 432 tm
+-90 rm
+[] 0 setdash
+a 0 0 m -8 2 L 0 -2 L -0 -2 L 0 0 l z pf
+1 sw
+0 0 m -8 2 L 0 -2 L -0 -2 L 0 0 l z ps
+90 rm
+-47 -432 tm
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+81 495 m 85.5 499.5 103.5 508.5 108 522 c 112.5 535.5 102.776 563.082 108 576 c 113.224 588.918 133.344 595.008 139.344 599.508 c ps
+gs
+144 603 tm
+36.8699 rm
+[] 0 setdash
+a 0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z pf
+1 sw
+0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z ps
+-36.8699 rm
+-144 -603 tm
+gr
+gr
+107.729 549.218 tm
+90 rm
+gs
+1 1 1 sc
+a -45 -8 m 90 0 L 0 17 L -90 0 L z -45 -8 90 17 1 rf
+0 0 0 sc
+a -45 -8 m 90 0 L 0 17 L -90 0 L z -45 -8 90 17 1 rc
+0 -5 m /Helvetica 12 ssf
+0 0 0 sc
+-28 -2 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(Exception) s
+0 0 0 sc
+gr
+-90 rm
+-107.729 -549.218 tm
+gs
+1 sw
+gr
+gs
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 256 617 m 0.6 0.6 0.6 sc
+148 617 l 148 581 l 256 581 l 256 617 l z pf
+a 256 617 m 0.6 0.6 0.6 sc
+148 617 l 148 581 l 256 581 l 256 617 l ps
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 252 621 m 1 1 1 sc
+144 621 l 144 585 l 252 585 l 252 621 l z pf
+a 252 621 m 0 0 0 sc
+144 621 l 144 585 l 252 585 l 252 621 l ps
+gr
+gs
+gs
+146 588 104 31 1 rc
+0 605 m /Helvetica 12 ssf
+0 0 0 sc
+160 608 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(Save context ) s
+0 0 0 sc
+0 591 m /Helvetica 12 ssf
+0 0 0 sc
+157 594 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(& Call handler) s
+0 0 0 sc
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+198 585 m 198 578.803 198 554.987 198 547.82 c ps
+gs
+198 542 tm
+-90 rm
+[] 0 setdash
+a 0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z pf
+1 sw
+0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z ps
+90 rm
+-198 -542 tm
+gr
+gr
+gs
+1 1 1 sc
+144 555 108 17 1 rf
+0 0 0 sc
+144 555 108 17 1 rc
+0 558 m /Helvetica 12 ssf
+0 0 0 sc
+150 561 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(kprobe_handler\(\)) s
+0 0 0 sc
+gr
+gs
+1 sw
+gr
+gs
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 256 502 m 0.6 0.6 0.6 sc
+148 502 l 148 466 l 256 466 l 256 502 l z pf
+a 256 502 m 0.6 0.6 0.6 sc
+148 502 l 148 466 l 256 466 l 256 502 l ps
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 252 506 m 1 1 1 sc
+144 506 l 144 470 l 252 470 l 252 506 l z pf
+a 252 506 m 0 0 0 sc
+144 506 l 144 470 l 252 470 l 252 506 l ps
+gr
+gs
+gs
+146 473 104 31 1 rc
+0 490 m /Helvetica 12 ssf
+0 0 0 sc
+154 493 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(Copy flags from ) s
+0 0 0 sc
+0 476 m /Helvetica 12 ssf
+0 0 0 sc
+158 479 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(saved context) s
+0 0 0 sc
+gr
+gr
+gs
+1 sw
+gr
+gs
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 256 468 m 0.6 0.6 0.6 sc
+148 468 l 148 383 l 256 383 l 256 468 l z pf
+a 256 468 m 0.6 0.6 0.6 sc
+148 468 l 148 383 l 256 383 l 256 468 l ps
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 252 472 m 1 1 1 sc
+144 472 l 144 387 l 252 387 l 252 472 l z pf
+a 252 472 m 0 0 0 sc
+144 472 l 144 387 l 252 387 l 252 472 l ps
+gr
+gs
+gs
+146 389 104 81 1 rc
+0 456 m /Helvetica 12 ssf
+0 0 0 sc
+149 459 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(In saved context: ) s
+0 0 0 sc
+0 442 m /Helvetica 12 ssf
+0 0 0 sc
+160 445 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(- disable ints ) s
+0 0 0 sc
+0 428 m /Helvetica 12 ssf
+0 0 0 sc
+154 431 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(- enable single ) s
+0 0 0 sc
+0 414 m /Helvetica 12 ssf
+0 0 0 sc
+156 417 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(stepping or set ) s
+0 0 0 sc
+0 400 m /Helvetica 12 ssf
+0 0 0 sc
+174 403 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(Next PC ) s
+0 0 0 sc
+0 386 m /Helvetica 12 ssf
+0 0 0 sc
+153 389 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(- set PC to slot) s
+0 0 0 sc
+gr
+gr
+gs
+1 sw
+gr
+gs
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 256 383 m 0.6 0.6 0.6 sc
+148 383 l 148 347 l 256 347 l 256 383 l z pf
+a 256 383 m 0.6 0.6 0.6 sc
+148 383 l 148 347 l 256 347 l 256 383 l ps
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 252 387 m 1 1 1 sc
+144 387 l 144 351 l 252 351 l 252 387 l z pf
+a 252 387 m 0 0 0 sc
+144 387 l 144 351 l 252 351 l 252 387 l ps
+gr
+gs
+gs
+146 354 104 31 1 rc
+0 371 m /Helvetica 12 ssf
+0 0 0 sc
+157 374 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(If pre_handler, ) s
+0 0 0 sc
+0 357 m /Helvetica 12 ssf
+0 0 0 sc
+182 360 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(call it) s
+0 0 0 sc
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+198 351 m 198 348.97 198 341.82 198 338.82 c ps
+gs
+198 333 tm
+-90 rm
+[] 0 setdash
+a 0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z pf
+1 sw
+0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z ps
+90 rm
+-198 -333 tm
+gr
+gr
+gs
+1 sw
+gr
+gs
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 256 329 m 0.6 0.6 0.6 sc
+148 329 l 148 311 l 256 311 l 256 329 l z pf
+a 256 329 m 0.6 0.6 0.6 sc
+148 329 l 148 311 l 256 311 l 256 329 l ps
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 252 333 m 1 1 1 sc
+144 333 l 144 315 l 252 315 l 252 333 l z pf
+a 252 333 m 0 0 0 sc
+144 333 l 144 315 l 252 315 l 252 333 l ps
+gr
+gs
+gs
+146 317 104 14 1 rc
+0 317 m /Helvetica 12 ssf
+0 0 0 sc
+153 320 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(Restore context) s
+0 0 0 sc
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+252 324 m 256.5 328.5 276 324 279 351 c 282 378 269.038 459.807 270 486 c 270.962 512.193 281.772 503.657 284.772 508.157 c ps
+gs
+288 513 tm
+56.3099 rm
+[] 0 setdash
+a 0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z pf
+1 sw
+0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z ps
+-56.3099 rm
+-288 -513 tm
+gr
+gr
+275.264 418.803 tm
+90 rm
+gs
+1 1 1 sc
+a -36 -16 m 72 0 L 0 31 L -72 0 L z -36 -16 72 31 1 rf
+0 0 0 sc
+a -36 -16 m 72 0 L 0 31 L -72 0 L z -36 -16 72 31 1 rc
+0 1 m /Helvetica 12 ssf
+0 0 0 sc
+-32 4 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(Return from ) s
+0 0 0 sc
+0 -13 m /Helvetica 12 ssf
+0 0 0 sc
+-28 -10 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(Exception) s
+0 0 0 sc
+gr
+-90 rm
+-275.264 -418.803 tm
+gs
+1 sw
+gr
+gs
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 373 518 m 0.6 0.6 0.6 sc
+292 518 l 292 500 l 373 500 l 373 518 l z pf
+a 373 518 m 0.6 0.6 0.6 sc
+292 518 l 292 500 l 373 500 l 373 518 l ps
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 369 522 m 1 1 1 sc
+288 522 l 288 504 l 369 504 l 369 522 l z pf
+a 369 522 m 0 0 0 sc
+288 522 l 288 504 l 369 504 l 369 522 l ps
+gr
+gs
+gs
+290 506 77 14 1 rc
+0 506 m /Helvetica 12 ssf
+0 0 0 sc
+303 509 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(Orig insn) s
+0 0 0 sc
+gr
+gr
+gs
+1 sw
+gr
+gs
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 373 500 m 0.6 0.6 0.6 sc
+292 500 l 292 482 l 373 482 l 373 500 l z pf
+a 373 500 m 0.6 0.6 0.6 sc
+292 500 l 292 482 l 373 482 l 373 500 l ps
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 369 504 m 1 1 1 sc
+288 504 l 288 486 l 369 486 l 369 504 l z pf
+a 369 504 m 0 0 0 sc
+288 504 l 288 486 l 369 486 l 369 504 l ps
+gr
+gs
+gs
+290 488 77 14 1 rc
+0 488 m /Helvetica 12 ssf
+0 0 0 sc
+293 491 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(Breakpoint 2) s
+0 0 0 sc
+gr
+gr
+gs
+1 sw
+gr
+gs
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 499 608 m 0.6 0.6 0.6 sc
+391 608 l 391 572 l 499 572 l 499 608 l z pf
+a 499 608 m 0.6 0.6 0.6 sc
+391 608 l 391 572 l 499 572 l 499 608 l ps
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 495 612 m 1 1 1 sc
+387 612 l 387 576 l 495 576 l 495 612 l z pf
+a 495 612 m 0 0 0 sc
+387 612 l 387 576 l 495 576 l 495 612 l ps
+gr
+gs
+gs
+389 579 104 31 1 rc
+0 596 m /Helvetica 12 ssf
+0 0 0 sc
+403 599 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(Save context ) s
+0 0 0 sc
+0 582 m /Helvetica 12 ssf
+0 0 0 sc
+400 585 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(& Call handler) s
+0 0 0 sc
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+369 495 m 370.5 498 379.5 499.5 378 513 c 376.5 526.5 359.307 563.038 360 576 c 360.693 588.962 377.657 587.772 382.157 590.772 c ps
+gs
+387 594 tm
+33.6901 rm
+[] 0 setdash
+a 0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z pf
+1 sw
+0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z ps
+-33.6901 rm
+-387 -594 tm
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+441 576 m 441 569.47 441 544.32 441 536.82 c ps
+gs
+441 531 tm
+-90 rm
+[] 0 setdash
+a 0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z pf
+1 sw
+0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z ps
+90 rm
+-441 -531 tm
+gr
+gr
+gs
+1 1 1 sc
+369 545 144 17 1 rf
+0 0 0 sc
+369 545 144 17 1 rc
+0 548 m /Helvetica 12 ssf
+0 0 0 sc
+378 551 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(post_kprobe_handler\(\)) s
+0 0 0 sc
+gr
+gs
+1 sw
+gr
+gs
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 499 527 m 0.6 0.6 0.6 sc
+391 527 l 391 491 l 499 491 l 499 527 l z pf
+a 499 527 m 0.6 0.6 0.6 sc
+391 527 l 391 491 l 499 491 l 499 527 l ps
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 495 531 m 1 1 1 sc
+387 531 l 387 495 l 495 495 l 495 531 l z pf
+a 495 531 m 0 0 0 sc
+387 531 l 387 495 l 495 495 l 495 531 l ps
+gr
+gs
+gs
+389 498 104 31 1 rc
+0 515 m /Helvetica 12 ssf
+0 0 0 sc
+397 518 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(If post_handler, ) s
+0 0 0 sc
+0 501 m /Helvetica 12 ssf
+0 0 0 sc
+425 504 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(call it) s
+0 0 0 sc
+gr
+gr
+gs
+1 sw
+gr
+gs
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 499 491 m 0.6 0.6 0.6 sc
+391 491 l 391 455 l 499 455 l 499 491 l z pf
+a 499 491 m 0.6 0.6 0.6 sc
+391 491 l 391 455 l 499 455 l 499 491 l ps
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 495 495 m 1 1 1 sc
+387 495 l 387 459 l 495 459 l 495 495 l z pf
+a 495 495 m 0 0 0 sc
+387 495 l 387 459 l 495 459 l 495 495 l ps
+gr
+gs
+gs
+389 462 104 31 1 rc
+0 479 m /Helvetica 12 ssf
+0 0 0 sc
+398 482 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(Restore copied ) s
+0 0 0 sc
+0 465 m /Helvetica 12 ssf
+0 0 0 sc
+428 468 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(flags) s
+0 0 0 sc
+gr
+gr
+gs
+1 sw
+gr
+gs
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 499 455 m 0.6 0.6 0.6 sc
+391 455 l 391 392 l 499 392 l 499 455 l z pf
+a 499 455 m 0.6 0.6 0.6 sc
+391 455 l 391 392 l 499 392 l 499 455 l ps
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 495 459 m 1 1 1 sc
+387 459 l 387 396 l 495 396 l 495 459 l z pf
+a 495 459 m 0 0 0 sc
+387 459 l 387 396 l 495 396 l 495 459 l ps
+gr
+gs
+gs
+389 398 104 59 1 rc
+0 443 m /Helvetica 12 ssf
+0 0 0 sc
+393 446 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(Figure out where ) s
+0 0 0 sc
+0 429 m /Helvetica 12 ssf
+0 0 0 sc
+400 432 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(return address ) s
+0 0 0 sc
+0 415 m /Helvetica 12 ssf
+0 0 0 sc
+390 418 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(needs to be & set ) s
+0 0 0 sc
+0 401 m /Helvetica 12 ssf
+0 0 0 sc
+413 404 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(saved PC) s
+0 0 0 sc
+gr
+gr
+gs
+1 sw
+gr
+gs
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 499 392 m 0.6 0.6 0.6 sc
+391 392 l 391 356 l 499 356 l 499 392 l z pf
+a 499 392 m 0.6 0.6 0.6 sc
+391 392 l 391 356 l 499 356 l 499 392 l ps
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 495 396 m 1 1 1 sc
+387 396 l 387 360 l 495 360 l 495 396 l z pf
+a 495 396 m 0 0 0 sc
+387 396 l 387 360 l 495 360 l 495 396 l ps
+gr
+gs
+gs
+389 363 104 31 1 rc
+0 380 m /Helvetica 12 ssf
+0 0 0 sc
+392 383 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(preempt_enable_) s
+0 0 0 sc
+0 366 m /Helvetica 12 ssf
+0 0 0 sc
+404 369 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(no_resched\(\)) s
+0 0 0 sc
+gr
+gr
+gs
+1 sw
+gr
+gs
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 499 338 m 0.6 0.6 0.6 sc
+391 338 l 391 320 l 499 320 l 499 338 l z pf
+a 499 338 m 0.6 0.6 0.6 sc
+391 338 l 391 320 l 499 320 l 499 338 l ps
+[] 0 setdash
+1 sw
+1 setlinejoin
+a 495 342 m 1 1 1 sc
+387 342 l 387 324 l 495 324 l 495 342 l z pf
+a 495 342 m 0 0 0 sc
+387 342 l 387 324 l 495 324 l 495 342 l ps
+gr
+gs
+gs
+389 326 104 14 1 rc
+0 326 m /Helvetica 12 ssf
+0 0 0 sc
+396 329 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(Restore context) s
+0 0 0 sc
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+441 360 m 441 357.97 441 350.82 441 347.82 c ps
+gs
+441 342 tm
+-90 rm
+[] 0 setdash
+a 0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z pf
+1 sw
+0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z ps
+90 rm
+-441 -342 tm
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+441 324 m 435 318 453 294 405 288 c 357 282 199.5 265.5 153 288 c 106.5 310.5 132 396 126 423 c 120 450 123.632 442.934 117 450 c 110.368 457.066 92.2056 462.397 86.2056 465.397 c ps
+gs
+81 468 tm
+153.435 rm
+[] 0 setdash
+a 0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z pf
+1 sw
+0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z ps
+-153.435 rm
+-81 -468 tm
+gr
+gr
+gs
+1 1 1 sc
+250 262 72 31 1 rf
+0 0 0 sc
+250 262 72 31 1 rc
+0 279 m /Helvetica 12 ssf
+0 0 0 sc
+254 282 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(Return from ) s
+0 0 0 sc
+0 265 m /Helvetica 12 ssf
+0 0 0 sc
+258 268 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(Exception) s
+0 0 0 sc
+gr
+gs
+1 sw
+gr
+gs
+gr
+gs
+gs
+303 524 50 14 1 rc
+0 524 m /Helvetica 12 ssf
+0 0 0 sc
+304 527 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 12 ssf
+0 0 0 sc
+0 0 0 sc
+(Insn slot) s
+0 0 0 sc
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+252 369 m 253.833 369.833 260.167 375 263 374 c 265.833 373 269.333 366.333 269 363 c 268.667 359.667 263.026 355.038 261 354 c 258.974 352.962 258.343 355.772 256.843 356.772 c ps
+gs
+252 360 tm
+146.31 rm
+[] 0 setdash
+a 0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z pf
+1 sw
+0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z ps
+-146.31 rm
+-252 -360 tm
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+496 516 m 497.833 516.833 504.167 522 507 521 c 509.833 520 513.333 513.333 513 510 c 512.667 506.667 507.026 502.038 505 501 c 502.974 499.962 502.343 502.772 500.843 503.772 c ps
+gs
+496 507 tm
+146.31 rm
+[] 0 setdash
+a 0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z pf
+1 sw
+0 0 m -8 2 L 2 -2 L -2 -2 L 0 0 l z ps
+-146.31 rm
+-496 -507 tm
+gr
+gr
+gs
+1 sw
+gr
+gr
+restore
+%%Trailer
+end
+%%DocumentFonts: Helvetica-Bold Helvetica 
+%%DocumentNeededFonts: Helvetica-Bold Helvetica 
+%%EOF

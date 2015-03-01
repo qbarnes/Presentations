@@ -1,0 +1,91 @@
+; Visual Thought 1.0
+
+(header
+  (program "vthought")
+  (version "1.4")
+  (buildDate "$Date: 1998/07/17 01:33:32 $")
+  (writeDate "Sat Apr 14, 2007 10:34:50 PM CDT")
+  (documentPath "/home/qbarnes/kprobes-talk/insnslots_1rwflag.vthought")
+)
+
+(document
+  (palette F)
+  (layout
+    (page "Letter")
+    (units "Inches")
+    (orientation "portrait")
+    (numberOfPages 1 1)
+    (scale 100)
+    (margins 18 18 18 18)
+  )
+)
+
+(views
+  (view
+    (location 1398 138)
+    (size 632 723)
+    (zoom 1)
+    (documentLocation 0 119)
+    (gridSnap T)
+    (gridVisibility F)
+    (gridSpacing 9)
+    (pageBreaks T)
+    (toolVisibility T)
+    (rulerVisibility T)
+  )
+)
+
+(shapes
+  (shape
+    (id 1)
+    (layer 0)
+    (type "Rectangle")
+    (location 252 585)
+    (size 414 288)
+    (rotation 0)
+    (locked F)
+    (style
+      (filled F)
+      (fillColor 65535 65535 65535)
+      (stroked F)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (flipHorizontal F)
+    (flipVertical F)
+    (showText T)
+    (textVerticalAlignment "top")
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil helvetica medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard static inline long __kprobes insnslot_1arg_rwflags(long r0, long *cpsr,
+\par                                                         insn_1arg_fn_t *fn)
+\par \{               
+\par         register long rr0 asm("r0") = r0;
+\par         register long ret asm("r0");
+\par         long    oldcpsr = *cpsr;
+\par         long    newcpsr;
+\par                                                 
+\par         __asm__ volatile(
+\par                 "msr    cpsr_fs, %[oldcpsr]      \\n\\t"
+\par                 "mov    lr, pc                        \\n\\t"
+\par                 "mov    pc, %[fn]                   \\n\\t"
+\par                 "mrs    %[newcpsr], cpsr        \\n\\t"
+\par                 : "=r" (ret), [newcpsr] "=r" (newcpsr)
+\par                 : "0" (rr0), [oldcpsr] "r" (oldcpsr), [fn] "r" (fn)
+\par                 : "lr", "cc"
+\par         );
+\par         *cpsr = (oldcpsr & ~PSR_fs) | (newcpsr & PSR_fs);
+\par         return ret;
+\par \}
+\par \pard\qc })
+  )
+)
+
+(connections
+)
+
+(groups
+)

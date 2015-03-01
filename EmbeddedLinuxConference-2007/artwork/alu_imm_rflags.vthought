@@ -1,0 +1,82 @@
+; Visual Thought 1.0
+
+(header
+  (program "vthought")
+  (version "1.4")
+  (buildDate "$Date: 1998/07/17 01:33:32 $")
+  (writeDate "Fri Apr 13, 2007 3:06:00 PM CDT")
+  (documentPath "/home/qbarnes/kprobes-talk/alu_imm_rflags.vthought")
+)
+
+(document
+  (palette F)
+  (layout
+    (page "Letter")
+    (units "Inches")
+    (orientation "portrait")
+    (numberOfPages 1 1)
+    (scale 100)
+    (margins 18 18 18 18)
+  )
+)
+
+(views
+  (view
+    (location 1354 159)
+    (size 632 723)
+    (zoom 1)
+    (documentLocation 0 119)
+    (gridSnap T)
+    (gridVisibility F)
+    (gridSpacing 9)
+    (pageBreaks T)
+    (toolVisibility T)
+    (rulerVisibility T)
+  )
+)
+
+(shapes
+  (shape
+    (id 1)
+    (layer 0)
+    (type "Rectangle")
+    (location 256.5 639)
+    (size 423 162)
+    (rotation 0)
+    (locked F)
+    (style
+      (filled F)
+      (fillColor 65535 65535 65535)
+      (stroked F)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (flipHorizontal F)
+    (flipVertical F)
+    (showText T)
+    (textVerticalAlignment "top")
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil helvetica medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard static void __kprobes emulate_alu_imm_rflags(struct kprobe *p,
+\par                                                 struct pt_regs *regs)
+\par \{ 
+\par         insn_1arg_fn_t *i_fn = (insn_1arg_fn_t *)&p->ainsn.insn[0];
+\par         kprobe_opcode_t insn = p->opcode;
+\par         int     rd  = (insn >> 12) & 0xf;
+\par         int     rn  = (insn >> 16) & 0xf;
+\par         long   rnv = (rn == 15) ? (long)p->addr + 8 : regs->uregs[rn];
+\par         
+\par         regs->uregs[rd] = insnslot_1arg_rflags(rnv, regs->ARM_cpsr, i_fn);
+\par \}       
+\par \pard\qc })
+  )
+)
+
+(connections
+)
+
+(groups
+)

@@ -1,0 +1,21 @@
+Presenter: Quentin Barnes
+Company: Motorola
+Title: Kernel Probes for ARM
+Description:
+
+Kernel probes ("Kprobes") is a Linux 2.6 kernel feature that allows
+dynamic breakpoints to be placed most anywhere in the kernel. These
+breakpoints can be used on the fly to collect debugging and
+performance information with minimal system impact.
+
+To implement Kprobes, the kernel requires substantial code in the
+machine-dependent layer. Before now, no code existed to support
+Kprobes on the ARM platform. In developing Kprobes for ARM, due
+to the the ARM's unusual architecture, it presented difficulties
+previously unencountered and unresolved for any other platform.
+
+Also, all current Kprobes implementations present problems for
+real-time constraints on kernels configured for preemption. This
+unique approach fully implements Kprobes for ARM solving the
+existing implementation issues, is MP-safe, lightweight, and fits in
+just a small amount of code space.

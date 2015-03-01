@@ -1,0 +1,20 @@
+In my talk, topics I'm planning to cover:
+
+   *) General introduction to Kprobes,
+
+   *) The special problems the ARM cores presented for implementing
+      Kprobes on that architecture,
+
+   *) Issues in the current Kprobes machine-independent and
+      machine-dependent layers for multi-processor and real-time
+      concerns,
+
+   *) My ARM Kprobes implementation, design trade-offs in possible
+      approaches, and how the final version addresses all the
+      various concerns, and
+
+   *) Some sample practical uses of Kprobes in an embedded
+      environment with Q & A.
+
+
+boosting
