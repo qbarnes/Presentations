@@ -1,0 +1,3 @@
+[submodule "CUCUG"]
+	path = CUCUG
+	url = git@github.com:qbarnes/cucug_presentations.git
